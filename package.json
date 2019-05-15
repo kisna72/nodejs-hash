@@ -1,0 +1,21 @@
+{
+  "name": "nodejstut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "crypto-promise": "^2.1.0"
+  }
+}
