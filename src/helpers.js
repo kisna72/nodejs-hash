@@ -23,12 +23,9 @@ async function getRandomAlphaNumericString(length){
   return randChar
 }
 
-async function generateNewHash(company_name, previous_hash_value){
-  const timestamp = Date.now();
+async function generateNewHash(data, timestamp, company_name, previous_hash_value){
   //Requirements for 12-16 character string. We will randomly choose a number from 12-16. 
-  const randCharLength = 12 + Math.floor(Math.random()*5)
-  const randChar = await getRandomAlphaNumericString(randCharLength);
-  const pre_hash_string = randChar + timestamp.toString() + company_name + previous_hash_value;
+  const pre_hash_string = data + timestamp.toString() + company_name + previous_hash_value;
   const new_hash = await generateSha256Hash(pre_hash_string);
   return new_hash;
 }
