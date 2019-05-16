@@ -15,7 +15,6 @@
     "mocha": "^6.1.4"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "crypto-promise": "^2.1.0"
   }
 }

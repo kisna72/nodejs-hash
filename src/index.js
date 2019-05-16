@@ -12,7 +12,6 @@ dummyBlockChain.add({
 })
 console.log(dummyBlockChain)
 
-
 //Next Generate a QR Code. Next Add this QR Code to the block chain.
 const randCharLength = 12 + Math.floor(Math.random()*5);
 const timestamp = Date.now();
