@@ -13,3 +13,4 @@ Assumtions / Notes:
 5. True randomnes is impossible; I am using crypto's random algorithm to generate random QR Codes, and Math.random to generate a number between 12-16. 
 6. Hashing is done with SHA256 by utilising crypto module. 
 7. Implementation of Linked List is imcomplete. I only implemented pieces that I needed. 
+8. Using crypto-promise library because ... who doesn't like promises.
