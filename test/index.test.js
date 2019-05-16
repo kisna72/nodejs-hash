@@ -28,5 +28,13 @@ describe("getRandomAlphaNumericString Function", function(){
 
 
 describe("generateNewHash Function", function(){
-
+  it("generates a hash", async function(){
+    const hash = await generateNewHash("a","b","c","d");
+    assert.equal(typeof(hash),"string");
+  })
+  it("generates a sha256 hash", async function(){
+    const hash = await generateNewHash("a","b","c","d");
+    assert.equal(hash.length,64);
+  })
+  
 });
