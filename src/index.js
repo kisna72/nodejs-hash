@@ -33,10 +33,10 @@ dummyBlockChain.add({
 })
 console.log(dummyBlockChain)
 
-//Generate a pseudo-random number between 12 - 16.
+//Generate a pseudo-random number between 12 - 16. We will pass this to our getRandomAlphaNumericString function to produce qr codes.
 const randCharLength = 12 + Math.floor(Math.random()*5);
 const company_name = "SpotHero" //Example Company.
-getRandomAlphaNumericString(randCharLength) //Decided to use crypto's random algorithm for this exercise - which can take time, hence written as async code. 
+getRandomAlphaNumericString(randCharLength) //Decided to use crypto's (pseudo) random algorithm for this exercise - which can take time, hence written as async code. 
 .then(qr_code => {
   addQRCodeToBlockChain(qr_code, company_name,dummyBlockChain)
 }).catch(err=>console.log("Error"))
