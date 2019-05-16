@@ -1,8 +1,8 @@
 const crypto = require("crypto-promise");//using promise based crypto library
 
 async function generateSha256Hash(str){
-  //This function will convert any provided alphanumeric string into SHA256 Hash. Some cryptocurrencies use SHA256.
-  // Since hash calculations can take time, we will use async await syntax to return promise. 
+  // This function will convert any provided alphanumeric string into SHA256 Hash. I am choosing it because some cryptocurrencies use SHA256
+  // Since hash calculations can take time depending on the aglorithm, we will use async await syntax to return promise to make this future proof. 
   const hashobj = await crypto.hash("sha256")(str)
   return hashobj.toString("hex"); 
 }
