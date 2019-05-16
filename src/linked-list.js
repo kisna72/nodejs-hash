@@ -7,7 +7,7 @@ function LinkedList () {
   this.size = 0;
   this.tail = null; 
 
-  this.add = function(element){
+  this.add = (element) => {
     const node = new Node(element)
     if(this.head == null){
       this.tail = node;
